@@ -8,4 +8,5 @@ for (let i=1 ; i<=100 ; i++){
     boletosdisponibles.push(i)
 
 }
-console.log(boletosdisponibles)
+console.log(boletosdisponibles);
+
