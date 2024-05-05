@@ -1,0 +1,36 @@
+.young {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+* {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.contenedorPrincipal {
+    width: 360px;
+}
+.titulo { 
+    text-align: center;
+}
+.subtitulo {
+    font-size: 16px;
+    text-align: center;
+}
+.contenedorRifas { 
+    display: flex;
+    justify-content: space-around;
+}
+.imagenMoto {
+    width: 180px;
+    height: 120px;
+    content: url('/Imgs/kawasaki.jpg');
+    object-fit: cover;
+}
+.imagenCarro {
+    width: 180px;
+    height: 120px;
+    content: url('/Imgs/BMW_M3.jpg');
+    object-fit: cover;
+}
