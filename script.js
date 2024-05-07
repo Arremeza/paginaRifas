@@ -1,12 +1,25 @@
-function numeroAleatorio() {
-    let numeroAleatorio = Math.random()
-    numeroAleatorio;
+function actualizarHora() {
+    var fecha = new Date();
+    var segundos = fecha.getSeconds();
+    var minutos = fecha.getMinutes();
+    var horas = fecha.getHours();
+
+    if(horas>=13){
+        horas = horas-12;
+    }
+    if(minutos<10){
+        minutos = `0${minutos}`;
+    }
+
+    var elementSegundos = document.getElementById('pSegundos');
+    var elementMinutos = document.getElementById('pMinutos');
+    var elementHoras = document.getElementById('pHoras');
+
+    elementSegundos.textContent = segundos;
+    elementMinutos.textContent = minutos;
+    elementHoras.textContent = horas;
 }
 
-let boletosdisponibles = [] 
-for (let i=1 ; i<=100 ; i++){
-    boletosdisponibles.push(i)
+setInterval(actualizarHora,1000);
 
-}
-console.log(boletosdisponibles);
 
